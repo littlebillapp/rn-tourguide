@@ -18,6 +18,7 @@ export interface ModalProps {
     backdropColor: string;
     labels: Labels;
     dismissOnPress?: boolean;
+    preventOutsideInteraction?: boolean;
     easing(value: number): number;
     stop(): void;
     next(): void;
@@ -55,6 +56,7 @@ export declare class Modal extends React.Component<ModalProps, State> {
         backdropColor: string;
         labels: {};
         isHorizontal: boolean;
+        preventOutsideInteraction: boolean;
     };
     layout?: Layout;
     state: {
@@ -78,6 +80,7 @@ export declare class Modal extends React.Component<ModalProps, State> {
     handleStop: () => void;
     renderMask: () => JSX.Element;
     renderTooltip(): JSX.Element | null;
+    renderNonInteractionPlaceholder(): JSX.Element | null;
     render(): JSX.Element | null;
 }
 export {};

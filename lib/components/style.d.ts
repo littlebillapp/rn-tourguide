@@ -11,6 +11,7 @@ export interface IStyle {
     buttonText: TextStyle;
     bottomBar: ViewStyle;
     overlayContainer: ViewStyle;
+    nonInteractionPlaceholder: ViewStyle;
 }
 declare const _default: IStyle;
 export default _default;
