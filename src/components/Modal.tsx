@@ -146,9 +146,6 @@ export class Modal extends React.Component<ModalProps, State> {
     },
   ) {
     const layout = await this.measure()
-    if (!this.props.androidStatusBarVisible && Platform.OS === 'android') {
-      obj.top -= StatusBar.currentHeight || 30
-    }
 
     const center = {
       x: obj.left! + obj.width! / 2,
