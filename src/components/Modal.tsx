@@ -3,8 +3,6 @@ import {
   Animated,
   Easing,
   LayoutChangeEvent,
-  Platform,
-  StatusBar,
   StyleProp,
   StyleSheet,
   View,
